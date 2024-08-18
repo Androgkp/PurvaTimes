@@ -115,7 +115,8 @@
 				
 			<?php } ?>
 			<div class="main-header-brand" >
-				<div class="header-brand"  style="display: none;">
+				<?php if ( is_active_sidebar( 'header-banner' ) ) { ?>
+				<div class="header-brand">
 					<div class="wrap">
 						<div class="header-brand-content">
 							<?php 
@@ -123,7 +124,7 @@
 								/**
 								 * Site Branding
 								 */
-								do_action ('freenews_frontend_site_branding');
+								// do_action ('freenews_frontend_site_branding');
 							?>
 
 							<div class="header-right">
@@ -139,7 +140,7 @@
 						</div><!-- .header-brand-content -->
 					</div><!-- .wrap -->
 				</div><!-- .header-brand -->
-
+				<?php } ?>			
 				<div id="nav-sticker">
 					<div class="navigation-top">
 						<div class="wrap">
