@@ -114,8 +114,8 @@
 				</a>
 				
 			<?php } ?>
-			<div class="main-header-brand">
-				<div class="header-brand">
+			<div class="main-header-brand" >
+				<div class="header-brand"  style="display: none;">
 					<div class="wrap">
 						<div class="header-brand-content">
 							<?php 
