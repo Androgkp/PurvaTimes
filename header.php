@@ -91,25 +91,28 @@
 
 			<?php }
 			if ( ($disable_search_form == 0 ) || ( has_header_image() ) ){ ?>
-				<div class="header-media-search">
+				<a href="https://google.com" >
+					<div class="header-media-search" style="cursor: pointer;">
 
-					<?php
-						if ($disable_search_form == 0){
-							/**
-							* Search Form
-							*/
-							do_action('freenews_frontend_search_form');
-						}
+						<?php
+							if ($disable_search_form == 0){
+								/**
+								* Search Form
+								*/
+								// do_action('freenews_frontend_search_form');
+							}
 
-						if ( has_header_image() ) {
-							/**
-							* Header Image
-							*/
-							do_action ('freenews_frontend_header_image');
-						}
-					?>
+							if ( has_header_image() ) {
+								/**
+								* Header Image
+								*/
+								do_action ('freenews_frontend_header_image');
+							}
+						?>
 
-				</div><!-- .header-media-search -->
+					</div><!-- .header-media-search -->
+				</a>
+				
 			<?php } ?>
 			<div class="main-header-brand">
 				<div class="header-brand">
