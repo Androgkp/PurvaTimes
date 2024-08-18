@@ -36,16 +36,16 @@ add_filter('excerpt_length', 'freenews_excerpt_length');
 
 // Site Info
 function freenews_site_info(){ ?>
-    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'freenews' ) ); ?>">
+    <a href="<?php echo esc_url( __( '/', 'freenews' ) ); ?>">
 <?php
 /* translators: %s: CMS name, i.e. WordPress. */
-printf( esc_html__( 'Proudly powered by %s', 'freenews' ), 'WordPress' );
+printf( esc_html__( 'PurvaTimes', '' ), '' );
 ?>
 </a>
 <span class="sep"> | </span>
 <?php
 /* translators: 1: Theme name, 2: Theme author. */
-printf( esc_html__( 'Theme: %1$s By %2$s.', 'freenews' ), 'FreeNews <span class="sep"> | </span> ', '<a href="'.esc_url('https://themefreesia.com/').'">ThemeSpiral.com</a>' );
+printf( esc_html__( '&copy; Copyright 2024, All Rights Reserved', '' ) );
 }
 
 add_action ('freenews_footer_copyright_frontend','freenews_site_info');
