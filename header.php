@@ -91,7 +91,7 @@
 
 			<?php }
 			if ( ($disable_search_form == 0 ) || ( has_header_image() ) ){ ?>
-				<a href="https://google.com" >
+				<a href="/" >
 					<div class="header-media-search" style="cursor: pointer;">
 
 						<?php
