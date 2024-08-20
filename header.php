@@ -116,30 +116,30 @@
 			<?php } ?>
 			<div class="main-header-brand" >
 				<?php if ( is_active_sidebar( 'header-banner' ) ) { ?>
-				<div class="header-brand">
-					<div class="wrap">
-						<div class="header-brand-content">
-							<?php 
+					<div class="header-brand">
+						<div class="wrap">
+							<div class="header-brand-content">
+								<?php 
 
-								/**
-								 * Site Branding
-								 */
-								// do_action ('freenews_frontend_site_branding');
-							?>
+									/**
+									 * Site Branding
+									 */
+									// do_action ('freenews_frontend_site_branding');
+								?>
 
-							<div class="header-right">
-								<div class="header-banner">
+								<div class="header-right">
+									<div class="header-banner">
 
-									<?php if ( is_active_sidebar( 'header-banner' ) ) {
+										<?php if ( is_active_sidebar( 'header-banner' ) ) {
 
-										dynamic_sidebar( 'header-banner' );
+											dynamic_sidebar( 'header-banner' );
 
-									} ?>
-								</div><!-- .header-banner -->
-							</div><!-- .header-right -->
-						</div><!-- .header-brand-content -->
-					</div><!-- .wrap -->
-				</div><!-- .header-brand -->
+										} ?>
+									</div><!-- .header-banner -->
+								</div><!-- .header-right -->
+							</div><!-- .header-brand-content -->
+						</div><!-- .wrap -->
+					</div><!-- .header-brand -->
 				<?php } ?>			
 				<div id="nav-sticker">
 					<div class="navigation-top">
