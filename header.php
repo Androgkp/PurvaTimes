@@ -240,7 +240,7 @@
 
 	<div id="content" class="site-content">
 		<div class="site-content-cell">
-			<?php if ( ( is_front_page() && is_home() ) || is_front_page() ) {
+			<?php if ( ( !is_front_page() && !is_home() ) || is_front_page() ) {
 			// Default homepage
 				if ( is_active_sidebar( 'advertise-area' ) ) { ?>
 					<div class="advertise-area">
